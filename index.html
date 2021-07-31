@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <link href="./assets/css/style.css" rel="stylesheet" />
+
+    <title>BSD Admin</title>
+</head>
+
+<body>
+
+    <nav class="p-3" id="sideNavBar" aria-label="Side navigation">
+        <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none brand">
+            <img src="./assets/brand/bootstrap-logo-white.svg" alt="mdo" width="40" height="32" class="me-3">
+            BSD Admin
+        </a>
+
+        <hr />
+
+        <ul class="nav nav-pills flex-column mb-3">
+            <li>
+                <a href="#" class="nav-link active">
+                    <em class="bi bi-speedometer2"></em> Dashboard
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link">
+                    <em class="bi bi-people"></em> Users
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link">
+                    <em class="bi bi-bookmark"></em> Categories
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link">
+                    <em class="bi bi-file-text"></em> Blogs
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link">
+                    <em class="bi bi-view-list"></em> Visit Site
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <div class="right-container">
+        <nav class="navbar p-3 top-nav-bar navbar-light" aria-label="Top navigation">
+            <div class="flex-column">
+                <button class="navbar-toggler p-0 border-0 order-0" type="button" id="sideBarToggleButton"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <span class="ms-2 page-heading">Dashboard</span>
+            </div>
+
+            <div class="dropdown text-end">
+                <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="./assets/brand/dummy-image.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                    Krishan
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end text-small" aria-labelledby="dropdownUser1">
+                    <li><a class="dropdown-item" href="#">New project...</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="container-fluid">
+            <div class="row row-cols-1 row-cols-md-3 g-4 p-3">
+                <div class="col dashboard-counter">
+                    <div class="card">
+                        <em class="bi bi-people-fill img"></em>
+                        <div class="card-footer d-flex">
+                            <em class="bi bi-people-fill"></em>
+                            <span class="ms-auto">Users</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col dashboard-counter">
+                    <div class="card">
+                        <em class="bi bi-bookmark-fill img"></em>
+
+                        <div class="card-footer d-flex">
+                            <span>1000</span>
+                            <span class="ms-auto">Categories</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col dashboard-counter">
+                    <div class="card">
+                        <em class="bi bi-file-text-fill img"></em>
+
+                        <div class="card-footer d-flex">
+                            <span>1000</span>
+                            <span class="ms-auto">Blogs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row p-3">
+                <div class="col-6">
+                    <h3 class="mb-2">Five Latest Users</h3>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover table-bordered" aria-label="Table of users">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">First</th>
+                                    <th scope="col">Last</th>
+                                    <th scope="col">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+
+                                <tr>
+                                    <td>jellerby0@sohu.com</td>
+                                    <td>Jameson</td>
+                                    <td>Ellerby</td>
+                                    <td>Active</td>
+                                </tr>
+                                <tr>
+                                    <td>ntroth1@woothemes.com</td>
+                                    <td>Nance</td>
+                                    <td>Troth</td>
+                                    <td>Inactive</td>
+                                </tr>
+                                <tr>
+                                    <td>cperell2@quantcast.com</td>
+                                    <td>Cassi</td>
+                                    <td>Perell</td>
+                                    <td>Active</td>
+                                </tr>
+                                <tr>
+                                    <td>tmoulin3@globo.com</td>
+                                    <td>Trudey</td>
+                                    <td>Moulin</td>
+                                    <td>Inactive</td>
+                                </tr>
+                                <tr>
+                                    <td>dinger4@naver.com</td>
+                                    <td>Daphna</td>
+                                    <td>Inger</td>
+                                    <td>Inactive</td>
+                                </tr>
+                                <tr>
+                                    <td>mlaflin5@rakuten.co.jp</td>
+                                    <td>Maudie</td>
+                                    <td>Laflin</td>
+                                    <td>Active</td>
+                                </tr>
+                                <tr>
+                                    <td>mpargiter6@cocolog-nifty.com</td>
+                                    <td>Mellisent</td>
+                                    <td>Pargiter</td>
+                                    <td>Active</td>
+                                </tr>
+                                <tr>
+                                    <td>hbroome7@shareasale.com</td>
+                                    <td>Hannie</td>
+                                    <td>Broome</td>
+                                    <td>Inactive</td>
+                                </tr>
+                                <tr>
+                                    <td>bbowstead8@businesswire.com</td>
+                                    <td>Bartie</td>
+                                    <td>Bowstead</td>
+                                    <td>Active</td>
+                                </tr>
+                                <tr>
+                                    <td>sdoncaster9@mit.edu</td>
+                                    <td>Shae</td>
+                                    <td>Doncaster</td>
+                                    <td>Active</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <h3 class="mb-2">Five Latest Blogs</h3>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover table-bordered" aria-label="Table of users">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">Created</th>
+                                    <th scope="col">Modified</th>
+                                    <th scope="col">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+
+                                <tr>
+                                    <td>Recruiter</td>
+                                    <td>12/9/2020</td>
+                                    <td>6/28/2021</td>
+                                    <td>Inactive</td>
+                                </tr>
+                                <tr>
+                                    <td>Financial Advisor</td>
+                                    <td>12/13/2020</td>
+                                    <td>4/21/2021</td>
+                                    <td>Inactive</td>
+                                </tr>
+                                <tr>
+                                    <td>Registered Nurse</td>
+                                    <td>8/19/2020</td>
+                                    <td>5/4/2021</td>
+                                    <td>Inactive</td>
+                                </tr>
+                                <tr>
+                                    <td>Librarian</td>
+                                    <td>9/10/2020</td>
+                                    <td>3/21/2021</td>
+                                    <td>Inactive</td>
+                                </tr>
+                                <tr>
+                                    <td>Cost Accountant</td>
+                                    <td>9/19/2020</td>
+                                    <td>7/16/2021</td>
+                                    <td>Inactive</td>
+                                </tr>
+                                <tr>
+                                    <td>Web Developer II</td>
+                                    <td>9/26/2020</td>
+                                    <td>7/16/2021</td>
+                                    <td>Inactive</td>
+                                </tr>
+                                <tr>
+                                    <td>Geologist II</td>
+                                    <td>12/30/2020</td>
+                                    <td>4/24/2021</td>
+                                    <td>Inactive</td>
+                                </tr>
+                                <tr>
+                                    <td>Product Engineer</td>
+                                    <td>10/22/2020</td>
+                                    <td>1/18/2021</td>
+                                    <td>Active</td>
+                                </tr>
+                                <tr>
+                                    <td>Media Manager II</td>
+                                    <td>8/15/2020</td>
+                                    <td>7/14/2021</td>
+                                    <td>Active</td>
+                                </tr>
+                                <tr>
+                                    <td>Help Desk Operator</td>
+                                    <td>8/10/2020</td>
+                                    <td>6/1/2021</td>
+                                    <td>Inactive</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+
+    </div>
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        (function () {
+            'use strict'
+
+            let sideBarToggle = true;
+            let sideNavBar = document.querySelector('#sideNavBar');
+            let leftContainer = document.querySelector('.right-container');
+            document.querySelector('#sideBarToggleButton').addEventListener('click', function () {
+                sideNavBar.classList.toggle('active');
+                leftContainer.classList.toggle('active');
+            });
+
+        })()
+    </script>
+</body>
+
+</html>
