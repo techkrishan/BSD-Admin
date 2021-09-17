@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="./assets/css/style.css" rel="stylesheet" />
+
+    <title>IMS - Sign In</title>
+</head>
+
+<body class="d-flex flex-column h-100">
+
+    <nav class="navbar navbar-light bg-light border-bottom">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/images/logo.svg" alt="" width="100" height="24">
+            </a>
+        </div>
+    </nav>
+
+
+    <main class="login-form mt-10 p-3">
+        <form action="index.html">
+            <h2 class="mb-3 fw-normal text-center">Sign in to Portal</h2>
+            <p class="mb-3 fw-normal text-center">Please provide the login credentials</p>
+
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="checkbox mb-3">
+                        <label>
+                            <input type="checkbox" value="remember-me"> Remember me
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col-6 text-end">
+                    <a class="app-link" href="forgot.html">Forgot Password?</a>
+                </div>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign In</button>
+        </form>
+
+        <div class="auth-option text-center pt-5">No Account? Sign up <a class="text-link" href="signup.html">here</a>.</div>
+    </main>
+
+    <footer class="app-auth-footer bg-light border-top">
+        <div class="container text-center py-3">
+            <small class="copyright">Designed by <a class="app-link" href="https://logicgyan.com" target="_blank">Logic Gyan</a></small>
+        </div>
+    </footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

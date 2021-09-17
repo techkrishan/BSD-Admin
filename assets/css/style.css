@@ -101,3 +101,44 @@
     margin-left: 18rem;
   }
 }
+
+/* login form */
+
+.login-form {
+  width: 100%;
+  max-width: 420px;
+  margin: auto;
+}
+
+.login-form .checkbox {
+  font-weight: 400;
+}
+
+.login-form .form-floating:focus-within {
+  z-index: 2;
+}
+
+.app-auth-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.btn-primary {
+  background-color: #08A0A5;
+  border-color: #077579;
+}
+
+.btn-primary:hover {
+  background: #077579;
+}
+
+a {
+  color: #274557;
+  text-decoration: underline;
+}
+
+.mt-10 {
+  margin-top: 5rem;
+}
